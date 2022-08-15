@@ -56,7 +56,7 @@ class modLastFMHelper
 		{
 			$this->app->enqueueMessage($e->getCode() . ': ' . $e->getMessage(), 'error');
 
-			$user_info = 'Error getting user info.';
+			$user_info = false;
 		}
 
 		return $user_info;
@@ -89,7 +89,7 @@ class modLastFMHelper
 		{
 			$this->app->enqueueMessage($e->getCode() . ': ' . $e->getMessage(), 'error');
 
-			$recent = 'Error getting recently listened tracks.';
+			$recent = false;
 		}
 
 		return $recent;

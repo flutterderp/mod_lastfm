@@ -7,7 +7,7 @@
 	<license>MIT License; see LICENSE.txt</license>
 	<authorEmail>webmaster@southernanime.com</authorEmail>
 	<authorUrl>https://www.southernanime.com</authorUrl>
-	<version>0.1.5</version>
+	<version>0.1.6</version>
 	<description>MOD_LASTFM_XML_DESCRIPTION</description>
 
 	<files>
@@ -25,12 +25,12 @@
 
 	<config>
 		<fields name="params">
-			<fieldset name="">
+			<fieldset name="basic">
 				<field name="lastfm_apikey" type="password" label="MOD_LASTFM_FIELD_LASTFM_APIKEY_LABEL"
 					description="MOD_LASTFM_FIELD_LASTFM_APIKEY_DESC" filter="raw" autocomplete="new-password" />
 
 				<field name="lastfm_username" type="text" label="MOD_LASTFM_FIELD_LASTFM_USERNAME_LABEL"
-					description="MOD_LASTFM_FIELD_LASTFM_USERNAME_DESC" filter="string" />
+					description="MOD_LASTFM_FIELD_LASTFM_USERNAME_DESC" filter="string" autocomplete="new-password" />
 			</fieldset>
 
 			<fieldset name="advanced">

@@ -2,7 +2,7 @@
 /**
  * LastFM Recent Tracks Module
  *
- * @version 0.1.5
+ * @version 0.1.6
  */
 
 defined('_JEXEC') or die;
@@ -22,4 +22,7 @@ $extended = $lastfm->getExtended();
 $recent   = $lastfm->getTracks();
 $user     = $lastfm->getUser();
 
-require(ModuleHelper::getLayoutPath('mod_lastfm', $params->get('layout', 'default')));
+if($user !== false && $recent !== false)
+{
+	require(ModuleHelper::getLayoutPath('mod_lastfm', $params->get('layout', 'default')));
+}
